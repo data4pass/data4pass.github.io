@@ -5,7 +5,7 @@ body {
 
 #head-container{
 	height: 100%;
-	background-image: url("/img/header-bg.jpg");
+	background-image: url("https://github.com/data4pass/data4pass.github.io/blob/master/img/header-bg.jpg?raw=true");
 	background-color: black;
 	background-repeat: no-repeat;
 	color: white;
