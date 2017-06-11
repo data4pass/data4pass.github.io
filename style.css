@@ -1,7 +1,37 @@
 body {
-  padding-top: 50px;
+	height: 100%;
+	/*padding-top: 50px;*/ /*Stock CSS*/
 }
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+
+#head-container{
+	height: 100%;
+	background-image: url("/img/header-bg.jpg");
+	background-color: black;
+	background-repeat: no-repeat;
+	color: white;
 }
+
+#navbar{
+	float: right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#navbar > ul > li > a{
+	color: white;
+}
+
+.header {
+	padding: 40px 15px;
+	text-align: center;
+}
+
+#header-heading{
+	font-weight: bold;
+}
+
+#header-desc{
+	font-size: medium;
+}
+
