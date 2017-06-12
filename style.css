@@ -1,5 +1,10 @@
 html, body {
 	height: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3{
+	font-family: 'Exo 2', sans-serif;
 }
 
 .flex-center{
@@ -38,6 +43,5 @@ html, body {
 }
 
 #header-desc{
-	font-size: medium;
 }
 
