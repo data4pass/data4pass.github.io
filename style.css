@@ -7,6 +7,21 @@ h1, h2, h3{
 	font-weight: bold;
 }
 
+a:link, a:visited{
+	color: white;
+	text-decoration: none;
+	border-bottom: dashed;
+	border-width: 1px;
+}
+
+a:hover{
+	background-color: #d35400;
+}
+
+a:active{
+	background-color: #c0392b;
+}
+
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     background-color: transparent;
 	border: none;
@@ -54,11 +69,12 @@ h1, h2, h3{
 
 .icons-menu > li > a{
 	background: rgba(0, 0, 0, 0.7);
+	border: none;
 	color: LightGray;
 	margin: 0px;
 	padding: 20%;
 	text-align: center;
-	transition: background 0.5s, color 0.5s;
+	/* transition: background 0.5s, color 0.5s; */
 }
 
 .icons-menu > li > a:hover{
@@ -104,14 +120,14 @@ h1, h2, h3{
 	display: block;
 	width: 100%;
 	height: auto;
-	transition: .5s ease;
+	transition: .3s ease;
 	backface-visibility: hidden;
 }
 
 .project-desc{
 	color: black;
 	font-weight: bold;
-	transition: .5s ease;
+	transition: .3s ease;
 	opacity: 0;
 	position: absolute;
 	top: 50%;
@@ -147,7 +163,6 @@ h1, h2, h3{
 } */
 
 #navbar{
-	font-weight: bolder;
 	padding-right: 1%;
 }
 
@@ -157,7 +172,8 @@ h1, h2, h3{
 
 #navbar > ul > li > a{
 	color: LightGray;
-	transition: background 0.5s ease, color 0.5s ease;
+	border: none;
+	/* transition: background 0.5s ease, color 0.5s ease; */
 }
 
 #navbar > ul > li > a:hover, #navbar > ul > li > a:focus, #navbar > ul > li > a:active{
