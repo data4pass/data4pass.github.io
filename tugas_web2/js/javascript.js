@@ -1,34 +1,35 @@
-function cek(){
-  if(form.angka1.value == "" || form.angka2.value == "" || form.angka3.value == "" ){
+function process() {
+  if(document.getElementById('angka1').value == "" ||
+     document.getElementById('angka2').value == "" ||
+     document.getElementById('angka3').value == "" ){
     alert("Data kosong");
     exit;
   }
+
+  var form1 = document.getElementById('angka1').value;
+  var form2 = document.getElementById('angka2').value;
+  var form3 = document.getElementById('angka3').value;
+
+  var numbers = [parseFloat(form1),parseFloat(form2),parseFloat(form3)];
+
+  var maksimum = Math.max.apply(Math,numbers);
+  var minimum = Math.min.apply(Math,numbers);
+  numbers.sort((a, b)=> a - b );;
+
+  var rerata = (numbers[0] + numbers[1] + numbers[2]) / 3;
+
+  document.getElementById('rata').value = rerata;
+  document.getElementById('maks').value = maksimum;
+  document.getElementById('min').value = minimum;
+  document.getElementById('med').value = numbers[1];
 }
 
-function hitnil() {
-  cek();
-  a1=eval(form.angka1.value);
-  a2=eval(form.angka2.value);
-  a3=eval(form.angka3.value);
-
-  var numbers=[a1,a2,a3];
-  Nrata=(a1+a2+a3)/3;
-  maksimum=Math.max.apply(Math,numbers);
-  minimum=Math.min.apply(Math,numbers);
-  numbers.sort((a, b)=> a - b );
-  lowmid = Math.floor((numbers.length - 1) / 2);
-  highmid = Math.ceil((numbers.length - 1) / 2);
-  hasil = (numbers[lowmid] + numbers[highmid]) / 2;
-
-  form.rata.value = Nrata;
-  form.maks.value = maksimum;
-  form.min.value = minimum;
-  form.med.value = hasil;
-}
-
-function reset() {
-  form.angka1.value="";
-  form.angka2.value="";
-  form.angka3.value="";
-  form.total.value = "";
+function reset(){
+  document.getElementById('angka1').value = "";
+  document.getElementById('angka2').value = "";
+  document.getElementById('angka3').value = "";
+  document.getElementById('rata').value = "";
+  document.getElementById('maks').value = "";
+  document.getElementById('min').value = "";
+  document.getElementById('med').value = "";
 }
