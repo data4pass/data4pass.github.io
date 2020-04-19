@@ -1,0 +1,241 @@
+html, body{
+    height: 100%;
+    box-sizing: border-box;
+}
+/* HEADER START */
+header{
+    height:55px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color:white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    width:100%;
+    z-index:10;
+}
+header .row{
+    line-height:55px;
+}
+.navlogo{
+    cursor: default;
+    font-family: "Fira Code", monospace;
+}
+.navbar{
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bold;
+}
+.navbar ul{
+    list-style: none !important;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.navbar li{
+    margin-left: 35px;
+}
+.navbar a{
+    box-sizing: border-box;
+    /* color:#222; */
+    color:white;
+    text-decoration: none;
+    font-size:14px;
+}
+.navbar a:hover{
+    /* color:#4b5c6d; */
+    color:lightgray;
+    padding-top:5px;
+    /* border-top:1px solid #4b5c6d; */
+    border-top:1px solid lightgray;
+    filter: blur(0.3px);
+}
+.navbar a:active{
+    padding-top:1px;
+}
+/* HEADER END */
+/* FACE START */
+.face{
+    /* background-color: #222; */
+    background-image: url(../images/headBgE.png);
+    background-size: cover;
+    width:100%;
+    height:100%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.face img{
+    width:10%;
+    filter:drop-shadow(0px 0px 2px #222);
+    margin-bottom:15px;
+}
+.face h1{
+    font-weight: bold;
+    text-shadow: 0 0 5px #222;
+}
+.greeter{
+    text-align:center;
+    /* margin-top:15%; */
+}
+.orange{
+    color:#f39c12;
+}
+.bgOrange{
+    background-color: #f39c12;
+    color: #222;
+    padding:0 3px;
+    font-weight: bold;
+}
+.separator{
+    border-top:1px dashed white;
+    width:50%;
+    margin:0 auto;
+}
+.faceNav{
+    text-align:center;
+    margin-top:20px
+}
+.faceNav a{
+    margin:0 9px;
+    border-radius: 5px;
+}
+.navAbout{
+    text-decoration: none;
+    padding: 12px 25px;
+    color: white;
+    background-color: rgb(53, 53, 53);
+    box-shadow:0 5px #222;
+}
+.navAbout:hover{
+    color:white;
+    background-color: rgba(53, 53, 53, 0.6);
+}
+.navContact{
+    text-decoration: none;
+    padding: 12px 25px;
+    color: #222;
+    background-color: #ececec;
+    box-shadow:0 5px #bbbbbb;
+}
+.navContact:hover{
+    color:#222;
+    background-color: rgba(236, 236, 236, 0.9);
+}
+.navAbout:active, .navContact:active{
+    position:relative;
+    box-shadow: none;
+    top:5px;
+}
+/* FACE END */
+/* ABOUT START */
+/* ABOUT END */
+/* SOCIAL START */
+#social{
+    background-color: white;
+    border-top: 1px dashed #222;
+    border-bottom: 1px dashed #222;
+}
+#social .row{
+    padding:10px 0;
+}
+.social{
+    text-align:center;
+}
+.socialLogo{
+    margin:0 10px;
+    width: 30px;
+}
+.socialLogo:hover{
+    opacity:0.8;
+}
+.socialLogo:active{
+    position:relative;
+    top:5px;
+    filter: none;
+}
+.twitter{
+    filter: drop-shadow(0 5px #105d6e);
+}
+.linkedin{
+    filter: drop-shadow(0 5px #04425f);
+}
+.github, .mail{
+    filter: drop-shadow(0 5px rgb(17, 17, 17));
+}
+/* SOCIAL END */
+/* CONTACT START */
+#nameInput, #emailInput, #messageInput{
+    border-radius: 0;
+    border-width: 2px;
+}
+#messageInput{
+    height:250px;
+}
+#nameInput:focus, #emailInput:focus, #messageInput:focus{
+    border-color: #222;
+}
+#submitMessage, #clearMessage{
+    color: #222;
+    border-radius: 0;
+    border-width: 2px;
+    background-color: white;
+}
+#submitMessage:hover, #clearMessage:hover{
+    border-color: #222;
+}
+.special{
+    text-decoration: none;
+    font-weight: bold;
+    color:#222;
+    background-color: wheat;
+    padding: 0 5px;
+}
+.special:hover{
+    color:#222;
+    background-color: white;
+}
+.contact{
+    padding-top: 40px;
+}
+.danger{
+    display:none;
+    top:50px;
+    background-color: tomato;
+    color:#ececec;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius:10px;
+}
+/* CONTACT END */
+/* FOOTER START */
+footer{
+    text-align: center;
+    font-size:12px;
+    background-color: #222;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
+    color:#ececec;
+    padding: 8px 0;
+}
+footer p{
+    margin:0;
+}
+.footSeparator{
+    display:flex;
+}
+.a, .b, .c, .d{
+    height:1.5px;
+    width:10%;
+    flex-direction: row;
+}
+.a{
+    background-color: #c0392b;
+}
+.b{
+    background-color: #2980b9;
+}
+.c{
+    background-color: tomato;
+}
+.d{
+    background-color: #16a085;
+}
+/* FOOTER END */

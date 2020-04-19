@@ -1,0 +1,28 @@
+@media(max-height:500px){
+    .face img{
+        display:none;
+    }
+    .face .separator{
+        display:none;
+    }
+    .faceNav{
+        margin-top: 0px;
+    }
+    #messageInput{
+        height:100px;
+    }
+}
+@media(max-width:600px){
+    .face img{
+        width:100px;
+    }
+    #submitMessage, #clearMessage{
+        width:100%;
+    }
+    #messageInput{
+        height:200px;
+    }
+    .navbar{
+        width:0;
+    }
+}
