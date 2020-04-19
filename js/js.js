@@ -1,7 +1,6 @@
 const headerAnim = () => {
     let nav = document.querySelector("header")
     let scroll = this.scrollY
-    console.log(scroll)
     scroll > 20 ? nav.style.backgroundColor = "#222" : nav.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
 }
 const clearForm = () => {
