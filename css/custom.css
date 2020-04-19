@@ -96,7 +96,7 @@ header .row{
 }
 .faceNav a{
     margin:0 9px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 .navAbout{
     text-decoration: none;
@@ -107,7 +107,7 @@ header .row{
 }
 .navAbout:hover{
     color:white;
-    background-color: rgba(53, 53, 53, 0.6);
+    opacity: 0.8;
 }
 .navContact{
     text-decoration: none;
@@ -118,7 +118,7 @@ header .row{
 }
 .navContact:hover{
     color:#222;
-    background-color: rgba(236, 236, 236, 0.9);
+    opacity: 0.9;
 }
 .navAbout:active, .navContact:active{
     position:relative;
@@ -129,13 +129,17 @@ header .row{
 /* ABOUT START */
 /* ABOUT END */
 /* SOCIAL START */
-#social{
-    background-color: white;
-    border-top: 1px dashed #222;
-    border-bottom: 1px dashed #222;
-}
 #social .row{
-    padding:10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.social{
+    display: inline-block;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #222;
 }
 .social{
     text-align:center;

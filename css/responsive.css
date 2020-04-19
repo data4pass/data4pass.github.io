@@ -1,3 +1,9 @@
+@media(min-width:769px){
+    .social{
+        width:33.3% !important;
+    }
+}
+
 @media(max-height:500px){
     .face img{
         display:none;
