@@ -14,7 +14,7 @@
 }
 @media(max-width:600px){
     .face{
-        background-image: url(../images/headBgE_t_m.png);
+        background-image: url(../images/headBgE_t_m.jpg);
         background-size: cover;
     }
     .face img{
